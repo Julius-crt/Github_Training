@@ -1,0 +1,15 @@
+name: helloworld  # Name des workflows
+on: push # Event auf dem die jobs getriggert werden sollen
+jobs: 
+  hello-world-jobs: #name ersten jops (pipeline)
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repository
+      - uses: actions/checkout@v3 #nutz actions checkout und version 3 davon.
+      - run: echo "$(cat hello_world.txt)"
+      
+      
+
+    # ein workfow besteht aus jobs, welche wiederum aus srteps bestehen. (jeder step ist ein script oder eine action
+    
+  
