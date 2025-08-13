@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
-      - uses: actions/checkout@v3 #nutz actions checkout und version 3 davon.
+        uses: actions/checkout@v3 #nutz actions checkout und version 3 davon.
       - run: echo "Hello World"
       
       
